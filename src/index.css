@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* En tu archivo CSS principal */
+.custom-bullet {
+  @apply  w-2 h-2 mx-1 bg-gray-400 opacity-100 transition-all duration-300 hover:scale-125 hover:shadow-sm cursor-pointer;
+}
+  
+.custom-bullet-active {
+  @apply w-4 bg-white rounded-lg shadow-lg;
+}
+
+
+  
