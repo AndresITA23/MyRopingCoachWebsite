@@ -1,71 +1,143 @@
-import React, { useState } from "react";
-import { Award, Globe, Users, Calendar } from "lucide-react";
+import React from "react";
+import { Award, Globe, Users, Calendar, CheckCircle } from "lucide-react";
+import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import imageSrc from "../assets/images/aboutAldo.webp";
+import Footer from "../components/Footer";
 
 const AboutMe = () => {
-  const [imageLoaded, setImageLoaded] = useState(false);
+  const { t } = useTranslation();
+
+  const stats = [
+    {
+      icon: Award,
+      number: "30+",
+      label: t("about.coach_description_stats.years"),
+      color: "text-western-gold",
+      delay: 0.1,
+    },
+    {
+      icon: Users,
+      number: "5,000+",
+      label: t("about.coach_description_stats.students"),
+      color: "text-western-sage",
+      delay: 0.2,
+    },
+    {
+      icon: Globe,
+      number: "8",
+      label: t("about.coach_description_stats.countries"),
+      color: "text-accent",
+      delay: 0.3,
+    },
+    {
+      icon: Calendar,
+      number: "40",
+      label: t("about.coach_description_stats.clinics"),
+      color: "text-western-copper",
+      delay: 0.4,
+    },
+  ];
+
+  const achievements = [
+    t("about.achievements.certified"),
+    t("about.achievements.creator"),
+    t("about.achievements.international"),
+  ];
 
   return (
-    <section className="w-full bg-white px-6">
-      {!imageLoaded && (
-        <div className="flex items-center justify-center h-screen">
-          <p className="text-gray-700 text-lg">Cargando...</p>
-        </div>
-      )}
+    <div>
+      <section className="min-h-screen bg-gradient-to-br from-background via-western-cream to-secondary py-20 px-6 mt-10">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+            {/* Imagen */}
+            <motion.div
+              className="relative"
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <div className="absolute inset-0 bg-gradient-hero rounded-3xl blur-2xl opacity-20 animate-float"></div>
+              <img
+                src={imageSrc}
+                alt={t("about.coach_name")}
+                className="relative rounded-3xl shadow-elegant w-full max-w-lg mx-auto lg:max-w-none object-cover hero-text"
+              />
+            </motion.div>
 
-      <div className={`max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 ${!imageLoaded ? "hidden" : ""}`}>
-        {/* Imagen del coach */}
-        <div className="w-full md:w-1/2 flex justify-center">
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/myropingcoachweb.firebasestorage.app/o/fotos%2FDSC08975.webp?alt=media&token=7b529605-c45a-44b4-8b0b-da409cd4a4be"
-            alt="Aldo Garibay - Coach Internacional"
-            className="rounded-2xl shadow-xl max-w-sm md:max-w-md"
-            onLoad={() => setImageLoaded(true)}
-          />
-        </div>
+            {/* Texto */}
+            <motion.div
+              className="space-y-8"
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              <div className="space-y-4 hero-text">
+                <p className="text-sm uppercase tracking-wide text-accent">
+                  {t("about.know_me")}
+                </p>
+                <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+                  {t("about.coach_name")}
+                </h1>
 
-        {/* Texto */}
-        <div className="w-full md:w-1/2 text-center md:text-left">
-          <h2 className="text-4xl font-bold mb-4 text-gray-900">
-            Aldo Garibay
-          </h2>
-          <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Coach internacional de <span className="font-semibold">Team Roping</span>, certificado por la{" "}
-            <span className="font-semibold">AQHA (ID 4363499)</span> y creador
-            del método <span className="font-semibold">My Roping Coach</span>.
-          </p>
-          <p className="text-gray-600 leading-relaxed mb-8">
-            Con más de <span className="font-semibold">30 años de experiencia</span> como competidor y{" "}
-            <span className="font-semibold">20 años como coach</span>, he trabajado con más de <span className="font-semibold">5,000 alumnos</span> en{" "}
-            <span className="font-semibold">8 países</span> y en <span className="font-semibold">2 idiomas</span>, impartiendo un
-            promedio de <span className="font-semibold">40 clínicas al año</span>.
-          </p>
+                <div className="flex flex-wrap gap-2">
+                  {achievements.map((achievement, index) => (
+                    <motion.div
+                      key={index}
+                      className="achievement-badge inline-flex items-center gap-2 px-3 py-1 bg-gradient-stats rounded-full text-sm font-medium border border-border/20"
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
+                    >
+                      <CheckCircle className="w-4 h-4" />
+                      {achievement}
+                    </motion.div>
+                  ))}
+                </div>
 
-          {/* Highlights */}
-          <div className="grid grid-cols-2 gap-6">
-            <div className="flex flex-col items-center md:items-start">
-              <Award className="w-8 h-8 text-blue-600 mb-2" />
-              <p className="font-bold text-gray-800">30+ años</p>
-              <span className="text-sm text-gray-600">de experiencia</span>
-            </div>
-            <div className="flex flex-col items-center md:items-start">
-              <Users className="w-8 h-8 text-green-600 mb-2" />
-              <p className="font-bold text-gray-800">5,000+</p>
-              <span className="text-sm text-gray-600">alumnos apoyados</span>
-            </div>
-            <div className="flex flex-col items-center md:items-start">
-              <Globe className="w-8 h-8 text-purple-600 mb-2" />
-              <p className="font-bold text-gray-800">8 países</p>
-              <span className="text-sm text-gray-600">y 2 idiomas</span>
-            </div>
-            <div className="flex flex-col items-center md:items-start">
-              <Calendar className="w-8 h-8 text-red-600 mb-2" />
-              <p className="font-bold text-gray-800">40 clínicas</p>
-              <span className="text-sm text-gray-600">cada año</span>
-            </div>
+                <p className="text-xl lg:text-2xl text-foreground leading-relaxed">
+                  {t("about.coach_description")}
+                </p>
+              </div>
+            </motion.div>
           </div>
+
+          {/* Stats */}
+          <motion.div
+            className="grid grid-cols-2 lg:grid-cols-4 gap-6"
+            initial="hidden"
+            animate="show"
+            variants={{
+              hidden: { opacity: 0 },
+              show: { opacity: 1, transition: { staggerChildren: 0.2 } },
+            }}
+          >
+            {stats.map((stat, index) => {
+              const IconComponent = stat.icon;
+              return (
+                <motion.div
+                  key={index}
+                  className="stats-card border-0 shadow-warm rounded-lg border bg-card text-card-foreground shadow-sm"
+                  variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}
+                  transition={{ duration: 0.6, delay: stat.delay }}
+                >
+                  <div className="p-6 text-center space-y-4">
+                    <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-stats ${stat.color}`}>
+                      <IconComponent className="w-8 h-8" />
+                    </div>
+                    <div className="space-y-2">
+                      <p className="text-3xl lg:text-4xl font-bold text-foreground">{stat.number}</p>
+                      <p className="text-sm text-muted-foreground font-medium leading-tight">{stat.label}</p>
+                    </div>
+                  </div>
+                </motion.div>
+              );
+            })}
+          </motion.div>
         </div>
-      </div>
-    </section>
+      </section>
+      <Footer />
+    </div>
   );
 };
 

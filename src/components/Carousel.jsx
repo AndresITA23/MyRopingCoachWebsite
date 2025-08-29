@@ -5,6 +5,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import { Navigation, Pagination, Autoplay, EffectFade } from "swiper/modules";
+import MyRopingLogo from "../assets/MyRopingWhite.png"; // Adjust the path as necessary
 
 const CarouselBase = ({
   images = [],
@@ -80,7 +81,8 @@ const CarouselBase = ({
         pagination={{
           clickable: true,
           bulletClass: "swiper-pagination-bullet custom-bullet",
-          bulletActiveClass: "swiper-pagination-bullet-active custom-bullet-active",
+          bulletActiveClass:
+            "swiper-pagination-bullet-active custom-bullet-active",
         }}
         autoplay={autoplay ? { delay: 3000 } : false}
         loop={loop}
@@ -91,11 +93,21 @@ const CarouselBase = ({
       >
         {images.map((src, index) => (
           <SwiperSlide key={index} className={customSwiperSlideStyles}>
-            <img src={src} alt={`Slide ${index + 1}`} className={`${customImgSwiperStyles} ${slideHeight}`} />
+            <img
+              src={src}
+              alt={`Slide ${index + 1}`}
+              className={`${customImgSwiperStyles} ${slideHeight}`}
+            />
             {showOverlay && (
               <>
                 <div className="absolute bottom-0 w-full h-32 bg-gradient-to-t from-white to-transparent"></div>
-                <h1 className="absolute inset-0 flex items-center justify-center text-white text-2xl md:text-6xl font-bold text-center">My Roping Coach</h1>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <img
+                    src={MyRopingLogo}
+                    alt="My Roping Coach"
+                    className="max-h-24 md:max-h-32 lg:max-h-56"
+                  />
+                </div>
               </>
             )}
           </SwiperSlide>

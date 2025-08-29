@@ -18,11 +18,11 @@ const LayoutClinics = () => {
   }, []);
   return (
     <div className="h-screen flex flex-col">
-      <HeroImage
+      {/* <HeroImage
         imageUrl="https://images.pexels.com/photos/1766838/pexels-photo-1766838.jpeg?auto=compress&cs=tinysrgb&w=800"
         title={heroTitle}
         textPosition="center"
-      />
+      /> */}
       <div className="w-full mx-auto px-4 sm:px-8 py-8">
         <Outlet />
       </div>

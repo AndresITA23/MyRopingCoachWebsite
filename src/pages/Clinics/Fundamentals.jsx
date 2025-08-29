@@ -16,11 +16,6 @@ const Fundamentals = () => {
       <p className="text-lg text-gray-700">
         Ideal si quieres afianzar tu técnica antes de competir.
       </p>
-      <div className="mt-6">
-        <p className="font-semibold">📞 Llama ahora y asegura tu lugar:</p>
-        <p>USA: +1 (520) 415-4799</p>
-        <p>México: +52 (637) 105-3051</p>
-      </div>
     </div>
   );
 };

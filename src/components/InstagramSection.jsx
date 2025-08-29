@@ -7,9 +7,6 @@
         'https://www.instagram.com/p/DHd0X7uxgzH/',
         'https://www.instagram.com/p/DGze-V-t0xH/',
         'https://www.instagram.com/p/DDkkEpCScrw/',
-        'https://www.instagram.com/p/DMx5ruvxnVj/',
-        'https://www.instagram.com/p/DL4kkxzxzir/',
-        'https://www.instagram.com/p/DLu-MAZx89-/?img_index=1',
       ];
   
     // Función para redirigir al perfil de Instagram

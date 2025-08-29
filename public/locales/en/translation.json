@@ -1,0 +1,197 @@
+{
+  "about": {
+    "coach_name": "Aldo Garibay",
+    "coach_description": "International Team Roping coach, certified by AQHA (ID 4363499) and creator of the My Roping Coach method. With over 30 years as a competitor and 20 years as a coach, he has trained over 5,000 students in 8 countries and 2 languages.",
+    "know_me": "About",
+    "coach_description_stats": {
+      "years": "years of experience",
+      "students": "students trained",
+      "countries": "countries, 2 languages",
+      "clinics": "annual clinics"
+    },
+    "achievements": {
+      "certified": "Certified AQHA (ID 4363499)",
+      "creator": "Creator of My Roping Coach",
+      "international": "International Coach"
+    }
+  },
+  "method": {
+    "section_title": "What is My Roping Coach?",
+    "section_description": [
+      "A unique method that provides professional guidance to Team Roping competitors, focusing on two main areas:",
+      { "bold": "riding" },
+      "and",
+      { "bold": "mindset" },
+      "."
+    ],
+    "train_title": "Train with a proven method",
+    "train_description": [
+      "With over",
+      { "bold": "30 years of international experience" },
+      "and more than",
+      { "bold": "20 years as a certified coach" },
+      ", Aldo Garibay developed the",
+      { "bold": "My Roping Coach" },
+      "method, designed to take your performance to the next level. Clinics in",
+      { "bold": "two languages" },
+      ", focusing on fundamentals, strategy, and competitive mindset."
+    ],
+    "button": "Discover the Method",
+    "benefits_title": "Benefits of Training with My Roping Coach",
+    "benefits": [
+      ["Learn from a", { "bold": "certified AQHA coach" }, "(ID 4363499)."],
+      [
+        "Proven method with over",
+        { "bold": "5,000 students" },
+        "in 8 countries."
+      ],
+      [
+        "Comprehensive focus on",
+        { "bold": "performance and fundamentals" },
+        "."
+      ],
+      ["Training available in", { "bold": "Spanish and English" }, "."]
+    ]
+  },
+  "clinics": {
+    "section_title": "How do the clinics work?",
+    "cards": [
+      {
+        "title": "Performance",
+        "description": "Designed for active competitors looking to improve their performance while respecting their unique style. Videos and analysis are used to correct habits and optimize riding and mindset.",
+        "button": "Learn more →"
+      },
+      {
+        "title": "Fundamentals",
+        "description": "For those who want to strengthen the basics of roping and shooting, establishing correct posture, balance, and muscle memory from the start, with video tracking and guided practice.",
+        "button": "Learn more →"
+      }
+    ]
+  },
+  "schedule": {
+    "section_title": "When and Where?",
+    "section_description": "Professional Team Roping clinics adapted to your schedule and location",
+    "duration_title": "Duration",
+    "duration_weekend": "Weekend clinics",
+    "duration_weekend_value": "2-3 days",
+    "duration_weekday": "Weekday sessions",
+    "duration_weekday_value": "Available",
+    "languages": "Languages",
+    "languages_value": "English • Spanish",
+    "locations_title": "Locations",
+    "locations": [
+      "United States",
+      "Mexico",
+      "Puerto Rico",
+      "Panama",
+      "Costa Rica",
+      "Dominican Republic",
+      "Colombia",
+      "Ecuador"
+    ],
+    "coverage": "International coverage",
+    "cta_title": "Ready to improve your Team Roping?",
+    "cta_description": "Schedule your personalized clinic and take your skills to the next level with professional coaching",
+    "cta_button": "Schedule your clinic"
+  },
+  "testimonialsTitle": "Testimonials",
+  "testimonials": [
+    {
+      "name": "Fer Higuera",
+      "role": "Advanced student",
+      "text": "Aldo is an excellent instructor, his teaching method is clear and effective. I’ve improved a lot in a short time."
+    },
+    {
+      "name": "Walter Bazar",
+      "role": "Entrepreneur",
+      "text": "Aldo’s dedication to his students is admirable. I’ve seen great progress in my technique and confidence thanks to his classes."
+    },
+    {
+      "name": "Juan Pérez",
+      "role": "Student's parent",
+      "text": "My son has improved a lot since he started classes with Aldo. His technique and confidence have grown tremendously."
+    }
+  ],
+  "contact": {
+  "contactTitle": "Contact Me",
+  "contactDescription": "Ready to take your team roping skills to the next level? Get in touch to schedule your personalized clinic.",
+  "contactEmail": "info@aldogaribay.com",
+  "contactPhoneUSA": "USA: +1 520 415 4799",
+  "contactPhoneMX": "Mexico: +52 637 105 3051",
+  "contactButton": "Book your clinic",
+  "emailTitle": "Email",
+  "phoneTitle": "Phone",
+  "formTitle": "Send a Message",
+  "formName": "Name",
+  "formNamePlaceholder": "Your name",
+  "formEmail": "Email",
+  "formEmailPlaceholder": "your@email.com",
+  "formSubject": "Subject",
+  "formSubjectPlaceholder": "What would you like to discuss?",
+  "formMessage": "Message",
+  "formMessagePlaceholder": "Tell me about your roping goals and experience level...",
+  "formButton": "Send Message"
+},
+  "sponsors": {
+    "section_title": "Sponsors"
+  },
+  "footer": {
+    "featuredIn": "Featured In",
+    "quickLinks": "Quick Links",
+    "links": {
+      "home": "Home",
+      "about": "Who is Aldo?",
+      "whatIs": "What is My Roping Coach?",
+      "clinics": "Our Clinics",
+      "contact": "Contact"
+    },
+    "contactTitle": "Contact",
+    "phoneUSA": "USA: +1 (520) 415-4799",
+    "phoneMX": "Mexico: +52 (637) 105-3051",
+    "rights": "All rights reserved."
+  },
+  "navbar": {
+    "brand": "My Roping Coach",
+    "about": "About",
+    "method": "Method",
+    "clinics": "Clinics",
+    "performance": "Performance",
+    "fundamentals": "Fundamentals",
+    "contact": "Contact",
+    "aboutMe": "About Me",
+    "whatIs": "What is it?",
+    "team": "Our Team",
+    "stateRep": "State Representative"
+  },
+    "performance": {
+    "image_alt": "Performance Clinic - Team Roping",
+    "hero": {
+      "title": "Performance Clinic",
+      "badge": "Most Popular Clinic",
+      "description1": "Designed for competitors seeking to improve their performance while respecting their unique style.",
+      "description2": "A proven methodology combining advanced technical analysis with mental development to maximize competitive potential. Over 120 variables analyzed per session."
+    },
+    "features": {
+      "competitive": {
+        "title": "Competitive Focus",
+        "description": "Strengthens ropers as competitors through horsemanship and a mental competition plan without changing their essence."
+      },
+      "video": {
+        "title": "Video Analysis",
+        "description": "Using videos from multiple angles, including drone footage, over 120 variables are analyzed per run."
+      },
+      "analysis": {
+        "title": "Performance Overview",
+        "description": "Data is processed in spreadsheets and charts to detect errors and habits, generating short-term results."
+      },
+      "reprogram": {
+        "title": "Muscle Reprogramming",
+        "description": "Through supervised repetition and competition dynamics with prizes, negative habits are effectively replaced."
+      }
+    },
+    "cta": {
+      "title": "Transform Your Competitive Performance",
+      "description": "Join thousands of competitors who have improved their performance through a personalized approach that respects their individual style."
+    }
+  }
+}
